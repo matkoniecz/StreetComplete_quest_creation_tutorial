@@ -19,7 +19,7 @@ class AddIsDefibrillatorIndoor : OsmFilterQuestType<Boolean>() {
          and !indoor
     """
     override val changesetComment = "Add whether defibrillator is inside building"
-    override val wikiLink = "Tag:amenity=bicycle_parking"
+    override val wikiLink = "Key:indoor"
     override val icon = R.drawable.ic_quest_bicycle_parking_cover
     override val isDeleteElementEnabled = true
     override val questTypeAchievements = listOf(BICYCLIST)
