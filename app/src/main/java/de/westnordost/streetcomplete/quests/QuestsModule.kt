@@ -44,6 +44,7 @@ import de.westnordost.streetcomplete.quests.crossing.AddCrossing
 import de.westnordost.streetcomplete.quests.crossing_island.AddCrossingIsland
 import de.westnordost.streetcomplete.quests.crossing_type.AddCrossingType
 import de.westnordost.streetcomplete.quests.cycleway.AddCycleway
+import de.westnordost.streetcomplete.quests.defibrillator.AddIsDefibrillatorIndoor
 import de.westnordost.streetcomplete.quests.diet_type.AddHalal
 import de.westnordost.streetcomplete.quests.diet_type.AddKosher
 import de.westnordost.streetcomplete.quests.diet_type.AddVegan
@@ -370,6 +371,8 @@ whether the postbox is still there in countries in which it is enabled */
     /* ↓ 4.quests that may need to go inside ------------------------------------------------ */
 
     AddWheelchairAccessPublicTransport(), // need to look out for lifts etc, maybe even enter the station
+
+    AddIsDefibrillatorIndoor(), // need to go inside in case it is inside (or gone)
 
     // toilets
     AddToiletAvailability(), // OSM Carto, shown in OsmAnd descriptions
