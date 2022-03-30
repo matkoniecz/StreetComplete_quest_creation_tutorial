@@ -24,7 +24,7 @@ class AddIsDefibrillatorIndoor : OsmFilterQuestType<Boolean>() {
     override val isDeleteElementEnabled = true
     override val questTypeAchievements = listOf(LIFESAVER)
 
-    override fun getTitle(tags: Map<String, String>) = R.string.quest_bicycleParkingCoveredStatus_title
+    override fun getTitle(tags: Map<String, String>) = R.string.quest_is_defibrillator_inside_title
 
     override fun getHighlightedElements(element: Element, getMapData: () -> MapDataWithGeometry) =
         getMapData().filter("nodes, ways with amenity = bicycle_parking")
