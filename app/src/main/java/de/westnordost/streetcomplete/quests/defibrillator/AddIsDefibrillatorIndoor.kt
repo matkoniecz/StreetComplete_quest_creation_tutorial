@@ -13,11 +13,10 @@ import de.westnordost.streetcomplete.util.ktx.toYesNo
 class AddIsDefibrillatorIndoor : OsmFilterQuestType<Boolean>() {
 
     override val elementFilter = """
-        nodes, ways with
-         amenity = bicycle_parking
+        nodes with
+         emergency = defibrillator
          and access !~ private|no
-         and !covered
-         and bicycle_parking !~ shed|lockers|building
+         and !indoor
     """
     override val changesetComment = "Add bicycle parkings cover"
     override val wikiLink = "Tag:amenity=bicycle_parking"
