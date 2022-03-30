@@ -1,4 +1,4 @@
-package de.westnordost.streetcomplete.quests.bike_parking_cover
+package de.westnordost.streetcomplete.quests.defibrillator
 
 import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.data.osm.mapdata.Element
@@ -10,7 +10,7 @@ import de.westnordost.streetcomplete.data.user.achievements.QuestTypeAchievement
 import de.westnordost.streetcomplete.quests.YesNoQuestAnswerFragment
 import de.westnordost.streetcomplete.util.ktx.toYesNo
 
-class AddBikeParkingCover : OsmFilterQuestType<Boolean>() {
+class AddIsDefibrillatorIndoor : OsmFilterQuestType<Boolean>() {
 
     override val elementFilter = """
         nodes, ways with
