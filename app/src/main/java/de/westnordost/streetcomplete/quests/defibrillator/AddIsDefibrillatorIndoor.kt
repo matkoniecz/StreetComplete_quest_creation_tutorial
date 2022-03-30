@@ -27,7 +27,7 @@ class AddIsDefibrillatorIndoor : OsmFilterQuestType<Boolean>() {
     override fun getTitle(tags: Map<String, String>) = R.string.quest_is_defibrillator_inside_title
 
     override fun getHighlightedElements(element: Element, getMapData: () -> MapDataWithGeometry) =
-        getMapData().filter("nodes, ways with amenity = bicycle_parking")
+        getMapData().filter("nodes with emergency = defibrillator")
 
     override fun createForm() = YesNoQuestAnswerFragment()
 
