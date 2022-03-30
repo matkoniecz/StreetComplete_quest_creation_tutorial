@@ -32,6 +32,6 @@ class AddIsDefibrillatorIndoor : OsmFilterQuestType<Boolean>() {
     override fun createForm() = YesNoQuestAnswerFragment()
 
     override fun applyAnswerTo(answer: Boolean, tags: Tags, timestampEdited: Long) {
-        tags["covered"] = answer.toYesNo()
+        tags["indoor"] = answer.toYesNo()
     }
 }
